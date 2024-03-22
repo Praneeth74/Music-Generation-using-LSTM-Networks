@@ -17,11 +17,10 @@ from music21 import converter, instrument, note, chord
 
 # tf imports
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.models import Sequential, load_model, model_from_json
 from tensorflow.keras.layers import LSTM, Dense, Dropout, BatchNormalization
 
 # music_gen_utils
-
 class CombineMusic:
     def __init__(self, dirpath):
         """
@@ -77,7 +76,6 @@ class CreateDataset:
         self.labels_mapping = None
         self.labels_reverse_mapping = None
 
-
     def make_mappings(self):
         self.make_features_labels()
         all_notes = np.concatenate((self.features.ravel(), self.labels))
@@ -106,13 +104,6 @@ class CreateDataset:
             self.get_notes_and_chords()
             write_file_to_pickle(f'{notes_chords_path}/{file_name}', self.notes_chords_list)
         self.features, self.labels = self.make_dataset()
-
-
-    def get_train_seed_data(self, **args):
-        """
-            args similar to sklearn.model_selection.train_test_split
-        """
-        pass
 
     def get_notes_and_chords(self):
         self.notes_chords_list = []
