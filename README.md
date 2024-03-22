@@ -1,4 +1,4 @@
-## Generating a Playlist of Music
+## Generating a Playlist of Music using the LSTM model
 
 Firstly, we need to install the necessary libraries using the requirements.txt using pip -
 ```bash
