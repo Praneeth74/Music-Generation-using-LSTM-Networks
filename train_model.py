@@ -1,4 +1,4 @@
-from utils.music_utils import *
+from utils1.music_utils import *
 from model_architecture import MyModel
 
 import sys
