@@ -1,6 +1,5 @@
 ## Generating a Playlist of Music using the LSTM model
 
-[Kaggle Notebook](https://www.kaggle.com/code/praneeth097/music-generation-using-lstm/edit)
 
 Firstly, install the necessary libraries using the requirements.txt using pip -
 ```bash
