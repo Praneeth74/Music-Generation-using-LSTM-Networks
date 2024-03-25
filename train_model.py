@@ -1,6 +1,5 @@
 from utils1.music_utils import *
-from model_architecture import MyModel
-
+from modelxarchitecture.modelxarchitecture import MyModel
 import sys
 
 # Getting arguments
