@@ -1,4 +1,4 @@
-For training a model, use [Kaggle Notebook](https://www.kaggle.com/code/praneeth097/music-generation-using-lstm-networks)
+For training a model and more description, go through [Kaggle Notebook](https://www.kaggle.com/code/praneeth097/music-generation-using-lstm-networks)
 
 ## Generating a Playlist of Music using the LSTM model
 
