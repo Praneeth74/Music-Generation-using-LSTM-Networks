@@ -33,8 +33,8 @@ np.save(f'genxsets/{file1}_{dataset.length}{keyword}.npy', x_gen) # saving gener
 
 num_features = 1
 x_train = x_train.reshape((-1, dataset.length, num_features)) # reshaping train set
-print(x_train.shape)
-
+# print(x_train[:20, :, :])
+print(y_train[:20])
 print(length1, type(length1))
 # Creating the model
 scaling = 4

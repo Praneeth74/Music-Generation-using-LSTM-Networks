@@ -20,17 +20,17 @@ else:
     print("Invalid number of arguments")
     sys.exit(1)
 
-# Loading model archtecture
-# Loading model weights
-model = load_model_from_json_h5('models/beeth_30.json', 'models/beeth_30.keras')
+# ------------------------ Change the paths as you need -------------------------- #
+# Loading model archtecture and weights
+model = load_model_from_json_h5('models/beeth_30.json', 'models/beeth_30.keras') 
+# Loading Seed data
+x_gen = np.load('beeth_gen.npy') 
+file_path = 'data/beeth' # file path of the album
+# -------------------------------------------------------------------------------- #
 
 print("successfully loaded!")
 
-# Loading Seed data
-x_gen = np.load('beeth_gen.npy')
-
 # To get mappings
-file_path = 'data/beeth'
 name = os.path.basename(file_path)
 dataset = CreateDataset(file_path, name=name)
 dataset.make_mappings()
