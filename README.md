@@ -1,4 +1,4 @@
-For training a model and more description of the process, go through [Kaggle Notebook](https://www.kaggle.com/code/praneeth097/music-generation-using-lstm-networks)
+#### For training a model and more description of the process, go through [Kaggle Notebook](https://www.kaggle.com/code/praneeth097/music-generation-using-lstm-networks)
 
 ## Generating a Playlist of Music using the LSTM model
 The main file for generating music is the model_generate.py file. This file by default is set to generate beeth (beethoven) music using the model trained on that. Also it uses a seed from seed set (genxsets/beeth_gen.npy) as a start to generate a piece of music. So, if you want to generate music of different album. You would have to train a new model on that album using the kaggle notebook (preferably) to take advantage of gpu. After training, do download the trained model (both .json and .h5 files) and seed_set (.npy_file) to further use them to generate music without training again.
