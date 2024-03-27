@@ -18,7 +18,7 @@ Replace [note_count] with the number of notes or chords to generate in each song
 
 Example:
 ```bash
-python model_generate.py 10 100
+python model_generate.py 10 300
 ```
 The above script generates 10 songs with 300 notes or chords in each.
 
